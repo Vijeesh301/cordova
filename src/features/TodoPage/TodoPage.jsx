@@ -38,7 +38,11 @@ const TodoPage = () => {
               />{" "}
               <AddBoxIcon
                 className="mx-2 !text-[30px] !text-[#023334] cursor-pointer"
-                onClick={() => addItems()}
+                onClick={() => {
+                  if (todoName) {
+                    addItems();
+                  }
+                }}
               />
             </Box>
           </Grid>
