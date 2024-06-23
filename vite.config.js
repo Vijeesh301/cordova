@@ -5,4 +5,5 @@ import tailwindcss from "tailwindcss";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
+  base: "https://vijeesh301.github.io/cordova/",
 });
